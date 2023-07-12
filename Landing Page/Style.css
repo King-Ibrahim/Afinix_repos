@@ -1,0 +1,81 @@
+html{
+    box-sizing: border-box;
+    background-color:rgb(212, 226, 228);
+  }
+  *,*:before,*:after{
+    box-sizing: inherit;
+  }
+#Top{
+  background-color: #1F2937;
+  height: 300px;
+  width: 100%;
+}
+
+#logo{
+height: 24px;
+color: azure;
+}
+  #Navbar{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 10px;
+    padding-right:100px;
+ 
+  }
+
+  .Navitem{
+    border: cyan steelblue 10px;
+    border-style: double;
+    text-decoration: solid;
+    background-color: antiquewhite;
+    text-size-adjust: 50px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    font-size: 22px;
+  }
+
+  #Welcome{
+    padding-left: 40px;
+  }
+
+  .Message{
+    font-size: 48px bolder;
+    height: 48px;
+    color: #F9FAF8;
+  }
+
+  #Domain{
+    font-size: 18px;
+    color: #E5E7EB;
+  }
+
+  #Main{
+    background-color: aliceblue;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(243, 245, 243);
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #Stars{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+    padding-right:100px;
+  }
+
+  .Echelon{
+    height: 400px;
+
+  }
+  /*img{
+    
+    border: 3px solid rgb(0, 92, 128);
+    border-radius: 2px 2px 2px 2px;
+  }*/

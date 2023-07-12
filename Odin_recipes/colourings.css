@@ -1,0 +1,192 @@
+html{
+  box-sizing: border-box;
+  background-color:rgb(205, 249, 255);
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: bisque;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgb(236, 133, 6);
+  gap: 10em;
+}
+
+li{
+  display: block;
+  border-style: double;
+  border-color: cadetblue;
+}
+/*.box {
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+    background-color: aquamarine;
+  }*/
+
+  .box2 {
+    box-sizing: border-box;
+    width: 350px;
+    inline-size: 350px;
+    height: 150px;
+    block-size: 150px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+    background-color: antiquewhite;
+  }
+
+ /* html {
+    box-sizing: border-box;
+    background-color: rgb(229,210,44);
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }*/
+
+
+  .recipes{
+        display: flex;
+        justify-content: center;
+        background-color: aquamarine;
+        margin-top: 200px;
+        border-style: double;
+        border: 100px;
+        border-color: black;
+        height: 500px;
+        width: 100%;
+        flex-direction: row;
+        gap: 1em;
+
+  }
+
+  .Burger{
+    /*display: inline;*/
+    border-style: groove;
+    border: 100px;
+    border-color: black;
+    height:inherit;
+    background-color: rgb(80, 89, 206);
+    width: 25%;
+  }
+
+  .LambLasagna{
+   position: relative;
+    height:inherit;
+    background-color: rgb(110, 192, 151);
+ 
+    width: 25%;
+  }
+
+  .Cheeseburgerpizza{
+    
+    height:inherit;
+    background-color: rgb(223, 142, 142);
+
+    width: 25%;
+  }
+
+  .LambRoast{
+    
+    height:inherit;
+    background-color: rgb(228, 205, 255);
+    width: 25%;
+  }
+
+  .dob{
+    display: block;
+    background-color: rgb(116, 131, 221);
+    border-style: double;
+    border: 100px;
+  }
+
+  .main{
+    display: block;
+    width: 100%;
+    
+  }
+  .Recipe{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    grid-template-columns: 20% 70%;
+    gap: 1em;
+    width: 100%
+  }
+    
+  
+  .ingredients{
+    display: inline-block;
+    border-radius: 2em 2em 2em 2em;
+    background-color: aquamarine;
+    text-align: center;
+    height: 50%;
+    width: 25%;
+
+  }
+  .Steps{
+    display: inline-block;
+    justify-content: center;
+    background-color: beige;
+    border-radius: 2em 2em 2em 2em;
+    background-color: rgb(127, 255, 155);
+    text-align: center;
+    height: 50%;
+    width: 70%;
+  }
+  /*text*/
+  h1{
+    text-align: center;
+
+  }
+
+  h3{
+    text-align: center;
+
+  }
+  h4{
+    text-align: center;
+    width: 100%;
+    background-color: azure;
+    text-decoration: double;
+    text-size-adjust: 40px;
+    text-decoration-color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  h6{
+    font-size: medium;
+  }
+
+  /*Links*/
+  a{
+    background-color: azure;
+    text-underline-offset: none;
+    text-underline-position: none;
+  }
+  /*Images*/
+  img{
+    height:inherit;
+    position: center;
+    width: 100%;
+    height: 90%;
+    border-style: ridge;
+    border: 10px;
+  }
+  .pic{
+    justify-content: center;
+    border: 6px;
+    border-style: double;
+    width: 30%;
+    height: 40%;
+  }

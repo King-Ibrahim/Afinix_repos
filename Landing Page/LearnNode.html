@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Contact search-->
+    <label for="search">Search by contact name: </label>
+<input id="search" type="text" />
+<button>Search</button>
+
+<!--Generaying squares-->
+<label for="number">Enter number: </label>
+<input id="number" type="text" />
+<button>Generate integer squares</button>
+
+<p>Output:</p>
+<p></p>
+    <script>
+        //for of loop
+        //The for of loop is used to loop through items
+        var cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+        for(const cat of cats){
+            console.log(cat);
+        }
+
+        // map method
+        //Use map method to perform an operation on all elements of an data structure
+        //In this case we convert all leters of the cats array to uppercase
+        console.log("Map method example\n")
+        function toUpper(string) {
+  return string.toUpperCase();
+}
+
+ cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+const upperCats = cats.map(toUpper);
+
+console.log(upperCats);
+
+//Filter method
+//The filter method removes certain elemens and creates a new structure based on a specified condition
+//In this method the cats array is filtered to only elements that start with the letter L and is stored in a new array filtered
+function lCat(cat) {
+  return cat.startsWith('L');
+}
+
+ cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion', 'Legionaire', 'Liondale'];
+
+const filtered = cats.filter(lCat);
+
+console.log(filtered);
+
+console.log("Filter method example\n")
+
+// Using arrow function expressions
+ cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+const filtered2= cats.filter((cat) => cat.startsWith('L'));
+console.log(filtered2);
+
+//The for loop
+//The regular for loop is used to run the same code repeatedly
+
+
+//Contact search
+const contacts = ['Chris:2232322', 'Sarah:3453456', 'Bill:7654322', 'Mary:9998769', 'Dianne:9384975'];
+const para = document.querySelector('p');
+const input = document.querySelector('input');
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () => {
+  const searchName = input.value.toLowerCase();
+  input.value = '';
+  input.focus();
+  para.textContent = '';
+  for (const contact of contacts) {
+    const splitContact = contact.split(':');
+    if (splitContact[0].toLowerCase() === searchName) {
+      para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+      break;
+    }
+  }
+  if (para.textContent === '') {
+   para.textContent = 'Contact not found.';
+ }
+});
+
+//Generating Squares
+const para2 = document.querySelector('p');
+const input2 = document.querySelector('input');
+const btn2 = document.querySelector('button');
+
+btn2.addEventListener('click', () => {
+  para2.textContent = 'Output: ';
+  const num = input2.value;
+  input2.value = '';
+  input2.focus();
+  for (let i = 1; i <= num; i++) {
+    let sqRoot = Math.sqrt(i);
+    if (Math.floor(sqRoot) !== sqRoot) {
+      continue;
+    }
+    para2.textContent += `${i} `;
+  }
+});
+
+//While and do while
+//While
+cats2 = ['Pete', 'Biggles', 'Jasmine'];
+
+let myFavoriteCats = 'My cats are called ';
+
+let i = 0;
+
+while (i < cats2.length) {
+  if (i === cats2.length - 1) {
+    myFavoriteCats += `and ${cats2[i]}.`;
+  } else {
+    myFavoriteCats += `${cats2[i]}, `;
+  }
+
+  i++;
+}
+
+console.log(myFavoriteCats);     // "My cats are called Pete, Biggles, and Jasmine."
+
+//Do While
+ cats2 = ['Pete', 'Biggles', 'Jasmine'];
+
+let myFavoriteCats2 = 'My cats are called ';
+
+let j = 0;
+
+do {
+  if (j === cats.length - 1) {
+    myFavoriteCats += `and ${cats[j]}.`;
+  } else {
+    myFavoriteCats += `${cats[j]}, `;
+  }
+
+  j++;
+} while (j < cats.length);
+
+console.log(myFavoriteCats);     // "My cats are called Pete, Biggles, and Jasmine."
+
+
+    </script>
+    
+</body>
+</html>
